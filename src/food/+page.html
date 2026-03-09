@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/circle.svg" />
+    <link rel="stylesheet" href="/food/style.css" />
+    <title>vanilla-js</title>
+    <script type="module" src="/food/script.js"></script>
+  </head>
+  <body>
+    <h1>What should I cook today?</h1>
+    <button id="get_recipe">Lets find out!</button>
+    <div class="containers">
+      <h2 id="header">You should cook:</h2>
+      <div class="recipe">
+        <section>
+          <img id="recipe_image" />
+          <h3 id="recipe_title"></h3>
+          <p id="time"></p>
+        </section>
+        <section>
+            <h4>Ingredient list:</h4>
+            <ul id="ingredient_list">
+
+            </ul>
+        </section>
+        <section>
+          <h4>Instructions:</h4>
+            <p id="instructions"></p>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

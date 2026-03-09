@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/circle.svg" />
+    <link rel="stylesheet" href="/album/style.css" />
+    <title>vanilla-js</title>
+    <script type="module" src="/album/script.js"></script>
+  </head>
+  <body>
+    <h1>Album searcher</h1>
+    <div class="container">
+      <div class="search-area">
+        <h2>Search for album</h2>
+        <label for="album_id">Album ID</label>
+        <input id="album_id" type="text" placeholder="Album ID" />
+        <button id="search">Search</button>
+      </div>
+      <div class="results">
+        <div class="album-info">
+          <h3>Album info:</h3>
+		  <img class="image" id="album_image"/>
+		  <h4 id="album_name"></h4>
+		  <p id="artist_name"></p>
+		  <p id="release_date"></p>
+        </div>
+        <div class="songs">
+          <h3>Song list:</h3>
+		  <ul id="songlist"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
